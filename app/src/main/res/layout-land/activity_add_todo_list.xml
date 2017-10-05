@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.joeribes.joeribes_pset4.AddTodoListActivity">
+
+    <EditText
+        android:id="@+id/todoListInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Todo List"
+        android:inputType="textPersonName"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/listInput" />
+
+    <EditText
+        android:id="@+id/listInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Todo Item"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="78dp"
+        android:layout_below="@+id/todoListInput"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="addButtonClicked"
+        android:text="Add your todo list"
+        tools:layout_editor_absoluteX="126dp"
+        tools:layout_editor_absoluteY="307dp"
+        android:layout_below="@+id/descriptionInput"
+        android:layout_centerHorizontal="true" />
+
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="top|left"
+        android:hint="Description"
+        android:lines="8"
+        android:maxLines="10"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/listInput" />
+
+</RelativeLayout>
